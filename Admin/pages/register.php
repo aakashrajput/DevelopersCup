@@ -7,7 +7,7 @@
   <link rel="apple-touch-icon" sizes="76x76" href="https://demos.creative-tim.com/marketplace/black-dashboard-pro/assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="https://demos.creative-tim.com/marketplace/black-dashboard-pro/assets/img/favicon.png">
   <title>
-    User Registeration | DevelopHowTo
+    Register | DevelopHowTo
   </title>
   <!-- Extra details for Live View on GitHub Pages -->
   <!-- Canonical SEO -->
@@ -38,11 +38,11 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <!-- Nucleo Icons -->
-  <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="../../assets/css/nucleo-icons.css" rel="stylesheet" />
   <!-- CSS Files -->
-  <link href="../assets/css/black-dashboard.min.css" rel="stylesheet" />
+  <link href="../../assets/css/black-dashboard.min.css" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
-  <link href="../assets/demo/demo.css" rel="stylesheet" />
+  <link href="../../assets/demo/demo.css" rel="stylesheet" />
 </head>
 
 <body class="register-page">
@@ -67,27 +67,27 @@
       <div class="collapse navbar-collapse" id="navigation">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a href="\DevelopersCup/Admin/index.php" class="nav-link text-primary">
+            <a href="../dashboard.html" class="nav-link text-primary">
               <i class="tim-icons icon-minimal-left"></i> Back to Dashboard
             </a>
           </li>
           <li class="nav-item ">
-            <a href="user_reg.php" class="nav-link">
-              <i class="tim-icons icon-laptop"></i>User Register
+            <a href="register.html" class="nav-link">
+              <i class="tim-icons icon-laptop"></i> Register
             </a>
           </li>
           <li class="nav-item ">
-            <a href="login.php" class="nav-link">
+            <a href="login.html" class="nav-link">
               <i class="tim-icons icon-single-02"></i> Login
             </a>
           </li>
           <li class="nav-item  active ">
-            <a href="pricing.php" class="nav-link">
+            <a href="pricing.html" class="nav-link">
               <i class="tim-icons icon-coins"></i> Pricing
             </a>
           </li>
           <li class="nav-item ">
-            <a href="lock.php" class="nav-link">
+            <a href="lock.html" class="nav-link">
               <i class="tim-icons icon-lock-circle"></i> Lock
             </a>
           </li>
@@ -151,8 +151,8 @@
             <div class="col-md-7 mr-auto">
               <div class="card card-register card-white">
                 <div class="card-header">
-                  <img class="card-img" src="../assets/img/card-primary.png" alt="Card image">
-                  <h4 class="card-title">User Register</h4>
+                  <img class="card-img" src="../../assets/img/card-primary.png" alt="Card image">
+                  <h4 class="card-title">Register</h4>
                 </div>
                 <div class="card-body">
                   <form class="form">
@@ -180,22 +180,6 @@
                       </div>
                       <input type="text" class="form-control" placeholder="Password">
                     </div>
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <div class="input-group-text">
-                          <i class="tim-icons icon-lock-circle"></i>
-                        </div>
-                      </div>
-                      <input type="text" class="form-control" placeholder="Password1">
-                    </div>
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <div class="input-group-text">
-                          <i class="tim-icons icon-badge"></i>
-                        </div>
-                      </div>
-                      <input type="text" class="form-control" placeholder="College Name">
-                    </div>
                     <div class="form-check text-left">
                       <label class="form-check-label">
                         <input class="form-check-input" type="checkbox">
@@ -214,4 +198,4 @@
           </div>
         </div>
       </div>
-     <?php include("includes/footer.php"); ?>
+     <?php include("../includes/footer.php"); ?>
