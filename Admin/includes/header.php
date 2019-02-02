@@ -60,43 +60,37 @@
             <div class="collapse" id="pagesExamples">
               <ul class="nav">
                 <li>
-                  <a href="./pages/pricing.html">
+                  <a href="./pages/pricing.php">
                     <span class="sidebar-mini-icon">P</span>
                     <span class="sidebar-normal"> Pricing </span>
                   </a>
                 </li>
                 <li>
-                  <a href="./pages/rtl.html">
-                    <span class="sidebar-mini-icon">RS</span>
-                    <span class="sidebar-normal"> RTL Support </span>
-                  </a>
-                </li>
-                <li>
-                  <a href="./pages/timeline.html">
+                  <a href="./pages/timeline.php">
                     <span class="sidebar-mini-icon">T</span>
                     <span class="sidebar-normal"> Timeline </span>
                   </a>
                 </li>
                 <li>
-                  <a href="./pages/login.html">
+                  <a href="./pages/login.php">
                     <span class="sidebar-mini-icon">L</span>
                     <span class="sidebar-normal"> Login </span>
                   </a>
                 </li>
                 <li>
-                  <a href="./pages/register.html">
+                  <a href="./pages/register.php">
                     <span class="sidebar-mini-icon">R</span>
                     <span class="sidebar-normal"> Register </span>
                   </a>
                 </li>
                 <li>
-                  <a href="./pages/lock.html">
+                  <a href="./pages/lock.php">
                     <span class="sidebar-mini-icon">LS</span>
                     <span class="sidebar-normal"> Lock Screen </span>
                   </a>
                 </li>
                 <li>
-                  <a href="./pages/user.html">
+                  <a href="./pages/user.php">
                     <span class="sidebar-mini-icon">UP</span>
                     <span class="sidebar-normal"> User Profile </span>
                   </a>
