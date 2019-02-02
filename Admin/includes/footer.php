@@ -115,7 +115,7 @@
 <!--  Notifications Plugin    -->
 <script src="../assets/js/plugins/bootstrap-notify.js"></script>
 <!-- Control Center for Black Dashboard: parallax effects, scripts for the example pages etc -->
-<script src="../assets/js/black-dashboard.min.js%3Fv=1.0.0"></script>
+<script src="../assets/js/black-dashboard.min.js"></script>
 <!-- Black Dashboard DEMO methods, don't include it in your project! -->
 <script src="../assets/demo/demo.js"></script>
 <!-- Sharrre libray -->
