@@ -1,3 +1,4 @@
+<?php include("./server/user_server.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -130,7 +131,7 @@
                           <i class="tim-icons icon-single-02"></i>
                         </div>
                       </div>
-                      <input type="text" class="form-control" placeholder="Full Name">
+                      <input type="text" class="form-control" name="username" value="<?php echo $username; ?>" placeholder="User Name">
                     </div>
                     <div class="input-group">
                       <div class="input-group-prepend">
@@ -147,6 +148,14 @@
                         </div>
                       </div>
                       <input type="text" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">
+                          <i class="tim-icons icon-lock-circle"></i>
+                        </div>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Confirm Password">
                     </div>
                     <div class="form-check text-left">
                       <label class="form-check-label">
@@ -171,7 +180,7 @@
           <ul class="nav">
             <li class="nav-item">
               <a href="javascript:void(0)" class="nav-link">
-                Creative Tim
+                DevelopHowTo
               </a>
             </li>
             <li class="nav-item">
@@ -180,7 +189,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a href="javascript:void(0)" class="nav-link">
+              <a href="https://acquirehowto.com/" class="nav-link">
                 Blog
               </a>
             </li>
@@ -190,7 +199,7 @@
             <script>
               document.write(new Date().getFullYear())
             </script> made with <i class="tim-icons icon-heart-2"></i> by
-            <a href="javascript:void(0)" target="_blank">Creative Tim</a> for a better web.
+            <a href="javascript:void(0)" target="_blank">DevelopHowTo</a> for a better future.
           </div>
         </div>
       </footer>
