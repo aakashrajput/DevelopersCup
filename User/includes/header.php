@@ -1,4 +1,23 @@
+<?php
+session_start();
 
+  if (!isset($_SESSION['username'])) {
+    $_SESSION['msg'] = "You must log in first";
+    header('location: .././index.php');
+  }
+  if (isset($_GET['logout'])) {
+    session_destroy();
+    unset($_SESSION['username']);
+    header("location: .././index.php");
+  }
+?>
+<?php include ("db.php");
+$url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
