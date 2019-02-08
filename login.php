@@ -1,5 +1,4 @@
- <? include("./server/user_server.php"); ?>
-
+ <?php include("./server/user_server.php");?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -102,7 +101,7 @@
                   <button name="login_user" class="btn btn-primary btn-lg btn-block mb-3">Get Started</button>
                   <div class="pull-left">
                     <h6>
-                      <a href="javascript:void(0)" class="link footer-link">Create Account</a>
+                      <a href="./register.php" class="link footer-link">Create Account</a>
                     </h6>
                   </div>
                   <div class="pull-right">

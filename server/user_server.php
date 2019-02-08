@@ -73,7 +73,7 @@ if (isset($_POST['login_user'])) {
 
   if (count($errors) == 0) {
     $password = md5($password);
-    $query = "SELECT * FROM user_reg WHERE username='$username' AND password='$password'";
+    $query = "SELECT * FROM user_reg WHERE username='$username' AND password='$password' AND role = 'student'";
     $results = mysqli_query($db, $query);
     if (mysqli_num_rows($results) == 1) {
       $_SESSION['username'] = $username;
@@ -84,6 +84,33 @@ if (isset($_POST['login_user'])) {
     }
   }
 }
+
+//admin login
+if (isset($_POST['login_admin'])) {
+  $admin_username = mysqli_real_escape_string($db, $_POST['admin_username']);
+  $password = mysqli_real_escape_string($db, $_POST['password']);
+
+  if (empty($admin_username)) {
+    array_push($errors, "Username is required");
+  }
+  if (empty($password)) {
+    array_push($errors, "Password is required");
+  }
+
+  if (count($errors) == 0) {
+    $password = md5($password);
+    $query = "SELECT * FROM admins WHERE admin_username='$admin_username' AND password='$password' AND role = 'admin'";
+    $results = mysqli_query($db, $query);
+    if (mysqli_num_rows($results) == 1) {
+      $_SESSION['admin_username'] = $admin_username;
+      $_SESSION['success'] = "You are now logged in";
+      header('location: ./Admin/');
+    }else {
+      array_push($errors, "Wrong username/password combination");
+    }
+  }
+}
+?>
 
 
 
