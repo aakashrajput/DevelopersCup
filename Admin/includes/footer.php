@@ -28,56 +28,7 @@
 </footer>
 </div>
 </div>
-<div class="fixed-plugin">
-<div class="dropdown show-dropdown">
-<a href="dashboard.html#" data-toggle="dropdown">
-  <i class="fa fa-cog fa-2x"> </i>
-</a>
-<ul class="dropdown-menu">
-  <li class="header-title"> Sidebar Background</li>
-  <li class="adjustments-line">
-    <a href="javascript:void(0)" class="switch-trigger background-color">
-      <div class="badge-colors text-center">
-        <span class="badge filter badge-primary active" data-color="primary"></span>
-        <span class="badge filter badge-info" data-color="blue"></span>
-        <span class="badge filter badge-success" data-color="green"></span>
-        <span class="badge filter badge-warning" data-color="orange"></span>
-        <span class="badge filter badge-danger" data-color="red"></span>
-      </div>
-      <div class="clearfix"></div>
-    </a>
-  </li>
-  <li class="header-title">
-    Sidebar Mini
-  </li>
-  <li class="adjustments-line">
-    <div class="togglebutton switch-sidebar-mini">
-      <span class="label-switch">OFF</span>
-      <input type="checkbox" name="checkbox" checked class="bootstrap-switch" data-on-label="" data-off-label="" />
-      <span class="label-switch label-right">ON</span>
-    </div>
-    <div class="togglebutton switch-change-color mt-3">
-      <span class="label-switch">LIGHT MODE</span>
-      <input type="checkbox" name="checkbox" checked class="bootstrap-switch" data-on-label="" data-off-label="" />
-      <span class="label-switch label-right">DARK MODE</span>
-    </div>
-  </li>
-  <li class="button-container mt-4">
-    <a href="" class="btn btn-default btn-block btn-round">
-      Documentation
-    </a>
-  </li>
-  <li class="header-title">Thank you for 95 shares!</li>
-  <li class="button-container text-center">
-    <button id="twitter" class="btn btn-round btn-info"><i class="fab fa-twitter"></i> &middot; 45</button>
-    <button id="facebook" class="btn btn-round btn-info"><i class="fab fa-facebook-f"></i> &middot; 50</button>
-    <br>
-    <br>
-    <a class="github-button" href="" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star ntkme/github-buttons on GitHub">Star</a>
-  </li>
-</ul>
-</div>
-</div>
+<?php include("./includes/theme_setting.php"); ?>
 <!--   Core JS Files   -->
 <script src="../assets/js/core/jquery.min.js"></script>
 <script src="../assets/js/core/popper.min.js"></script>
@@ -120,62 +71,6 @@
 <script src="../assets/demo/demo.js"></script>
 <!-- Sharrre libray -->
 <script src="../assets/demo/jquery.sharrre.js"></script>
-
-<script>
-$(document).ready(function() {
-
-
-$('#facebook').sharrre({
-  share: {
-    facebook: true
-  },
-  enableHover: false,
-  enableTracking: false,
-  enableCounter: false,
-  click: function(api, options) {
-    api.simulateClick();
-    api.openPopup('facebook');
-  },
-  template: '<i class="fab fa-facebook-f"></i> Facebook',
-  url: 'https://cup.develophowto.com/'
-});
-
-$('#google').sharrre({
-  share: {
-    googlePlus: true
-  },
-  enableCounter: false,
-  enableHover: false,
-  enableTracking: true,
-  click: function(api, options) {
-    api.simulateClick();
-    api.openPopup('googlePlus');
-  },
-  template: '<i class="fab fa-google-plus"></i> Google',
-  url: 'https://cup.develophowto.com/'
-});
-
-$('#twitter').sharrre({
-  share: {
-    twitter: true
-  },
-  enableHover: false,
-  enableTracking: false,
-  enableCounter: false,
-  buttons: {
-    twitter: {
-      via: 'CreativeTim'
-    }
-  },
-  click: function(api, options) {
-    api.simulateClick();
-    api.openPopup('twitter');
-  },
-  template: '<i class="fab fa-twitter"></i> Twitter',
-  url: 'https://cup.develophowto.com/'
-});
-});
-</script>
 
 <noscript>
 <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=111649226022273&ev=PageView&noscript=1" />
@@ -337,6 +232,12 @@ $('#twitter').sharrre({
 
       demo.initVectorMap();
 
+    });
+
+  </script>
+  <script>
+    $(document).ready(function() {
+      demo.initFullCalendar();
     });
   </script>
 </body>

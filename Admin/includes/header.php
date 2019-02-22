@@ -38,6 +38,7 @@ $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
   <link href="../assets/css/black-dashboard.min.css" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="../assets/demo/demo.css" rel="stylesheet" />
+  <script src="../ckeditor/ckeditor.js"></script>
 </head>
 
 <body class="sidebar-mini">
@@ -78,14 +79,14 @@ $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
           </li>
 
           <li>
-            <a data-toggle="collapse" href="#ContestPage">
+            <a data-toggle="collapse" href="#MentorPage">
               <i class="tim-icons icon-support-17"></i>
               <p>
                 Mentor
                 <b class="caret"></b>
               </p>
             </a>
-            <div class="collapse" id="ContestPage">
+            <div class="collapse" id="MentorPage">
               <ul class="nav">
                 <li>
                   <a href="../examples/pages/pricing.html">
@@ -119,7 +120,7 @@ $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
             <div class="collapse" id="ContestPage">
               <ul class="nav">
                 <li>
-                  <a href="../examples/pages/pricing.html">
+                  <a href="./create_contest.php">
                     <span class="sidebar-mini-icon">C.C</span>
                     <span class="sidebar-normal"> Create Contest </span>
                   </a>
@@ -182,18 +183,6 @@ $url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
                 </li>
               </ul>
             </div>
-          </li>
-          <li>
-            <a href="widgets.php">
-              <i class="tim-icons icon-settings"></i>
-              <p>Widgets</p>
-            </a>
-          </li>
-          <li>
-            <a href="charts.php">
-              <i class="tim-icons icon-chart-bar-32"></i>
-              <p>Charts</p>
-            </a>
           </li>
           <li>
             <a href="calendar.php">
